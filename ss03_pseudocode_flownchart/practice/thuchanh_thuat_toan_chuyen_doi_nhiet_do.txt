@@ -1,0 +1,10 @@
+*pseudo_code:
+Begin
+ Input C
+ F=(9*C)/5+32
+ Display F
+End.
+
+
+
+
