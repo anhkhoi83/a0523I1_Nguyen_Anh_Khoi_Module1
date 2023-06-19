@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let vatly;
+    let hoahoc;
+    let sinhhoc;
+
+    vatly=prompt("Nhập điểm vật lý");
+    hoahoc=prompt("Nhập điểm hóa học");
+    sinhhoc=prompt("nhập điểm sinh học ");
+
+    let ly =parseFloat(vatly);
+    let hoa =parseFloat(hoahoc);
+    let sinh=parseFloat(sinhhoc);
+    let tbc=((ly+hoa+sinh)/3);
+
+    document.write("Điểm vật lý là:"+ ly);
+    document.write("<br/>");
+    document.write("Điểm hoá học là:"+ hoa);
+    document.write("<br/>");
+    document.write("Điểm sinh học là:"+ sinh);
+    document.write("<br/>");
+    document.write("Điểm trung bình là:"+ tbc);
+</script>
+</body>
+</html>
