@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <th>Amount</th>
+      <th>From Currency</th>
+      <th>To Currency</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="amount" name="số tiền"></td>
+     <th>
+       <select name="Money" id="vietnam">
+         <option value="Vietnam">Vietnam</option>
+         <option value="USD">USD</option>
+       </select>
+     </th>
+      <th>
+        <select name="USD" id="USD">
+          <option value="USD">USD</option>
+          <option value="Vietnam">Vietnam</option>
+        </select>
+      </th>
+      <th><button style="background-color: blueviolet" type="button" onclick="chuyentien()">Convert</button></th>
+    </tr>
+
+  </table>
+</form>
+<script>
+  function chuyentien(){
+
+   let amount=  document.getElementById("amount").value;
+    alert(amount)
+    let from= document.getElementById("vietnam").value;
+    alert(from)
+    let to =document.getElementById("USD").value;
+    alert(to)
+    if(from=="Vietnam"&& to=="USD"){
+      document.write("Result: "+(amount/23000)+ "$")
+    }else if(from=="USD"&&to=="Vietnam"){
+      document.write("Result: "+ (amount*23000)+"VND")
+    }
+
+
+  }
+</script>
+</body>
+</html>
