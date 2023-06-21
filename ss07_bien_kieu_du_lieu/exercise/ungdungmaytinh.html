@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <h2>Caculator</h2> <br>
+
+        <tr>
+            <input type="text" id="num1" name=" nhập số ">
+            <input type="text" id="num2" name=" nhập số ">
+        </tr>
+        <tr>
+            <th>
+                <button type="button" onclick="tinhtoan('+')">Addition(+)</button>
+                <button type="button" onclick="tinhtoan('-')">Subtraction(-)</button>
+                <button type="button" onclick="tinhtoan('*')">Multiplication(X)</button>
+                <button type="button" onclick="tinhtoan('/')">Division(/)</button>
+            </th>
+        </tr>
+    </table>
+</form>
+<div id="Result">
+    <script>
+        function tinhtoan(operator) {
+            let num1 = +document.getElementById("num1").value;
+            let num2 = +document.getElementById("num2").value;
+            if (operator === "+")
+                document.getElementById("Result").innerHTML = "Result Addition:" + (num1 + num2)
+            if (operator === "-")
+                document.getElementById("Result").innerHTML = "Result Subtraction:" + (num1 - num2)
+            if (operator === "*")
+                document.getElementById("Result").innerHTML = " Result Multiplication:" + (num1 * num2)
+            if (operator === "/")
+                document.getElementById("Result").innerHTML = "Result Division:" + (num1 / num2)
+
+
+        }
+
+    </script>
+</div>
+</body>
+</html>
