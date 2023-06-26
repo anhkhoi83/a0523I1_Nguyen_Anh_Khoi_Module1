@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let testExam = +prompt("Nhập điểm kiểm tra:", '');
+    let midtermExam = +prompt("Nhập điểm kiểm tra giữa kì:", '');
+    let finalExam = +prompt("Nhập điểm kiểm tra cuối kì:", '');
+    average = (testExam + midtermExam + finalExam) / 3
+    if (average >= 8) {
+        alert("Học lực giỏi");
+    } else if (average >= 6.5) {
+        alert("Học lực khá ");
+    } else if (average >= 5) {
+        alert("Học lực Trung bình ");
+    } else {
+        alert("Học lực yếu");
+    }
+</script>
+
+</body>
+</html>
