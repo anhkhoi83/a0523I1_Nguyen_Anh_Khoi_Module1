@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let tienBanDau = parseFloat(prompt("Số tiền ban đầu bạn có là (triệu đồng):  "));
+  let soThang =parseFloat(prompt("Số tháng đã gửi là (tháng) :  "));
+  let laiSuat =parseFloat(prompt("Lãi suất(%) :  "));
+  let tienLai ;
+  if (soThang<0.2){
+    tienLai=(tienBanDau*Math.pow(1+((laiXuat)/100/365),365*soThang))-tienBanDau;
+    alert("Tien lai la:"+tienLai+"trieu");
+  }else if(soThang<1){
+    tienLai=(tienBanDau*Math.pow(1+((laiXuat)/100/52),52*soThang))-tienBanDau;
+    alert("Tien lai la:"+tienLai+"trieu");
+  }else if(soThang<12){
+    tienLai=(tienBanDau*Math.pow(1+((laiXuat)/100/12),12*soThang))-tienBanDau;
+    alert("Tien lai la:"+tienLai+"trieu");
+  }else {
+    tienLai=(tienBanDau*Math.pow(1+(laiXuat/100),soThang))-tienBanDau;
+    alert("Tien lai la:"+tienLai+"trieu");
+  }
+
+</script>
+
+</body>
+</html>

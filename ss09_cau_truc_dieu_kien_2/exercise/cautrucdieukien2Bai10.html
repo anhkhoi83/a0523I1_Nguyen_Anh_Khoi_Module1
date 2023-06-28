@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let giatiendien = + prompt("Nhập mức tiêu thụ trong một hộ gia đình(KWh):  ");
+  let result = parseFloat(giatiendien);
+  if(giatiendien>0 && giatiendien<100){
+    result = result*0.3
+    alert("Tổng số tiền cần phải trả là:"+ result+'đ')
+  } else if(giatiendien>101 && giatiendien<200){
+result = 100*0.3+ (result-100)*0.5
+    alert("Tổng số tiền cần phải trả là:"+ result+'đ')
+  }else if(giatiendien>200){
+    result=100*0.3+100*0.5+ (result-200)*0.7
+    alert("Tổng số tiền cần phải trả là:"+ result+'đ')
+  }else{
+    alert("Vui lòng nhập lại mức tiêu thụ trong nhà bạn! ")
+  }
+</script>
+
+</body>
+</html>
