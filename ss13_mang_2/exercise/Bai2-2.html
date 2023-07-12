@@ -6,10 +6,18 @@
 </head>
 <body>
 <script>
-  function daonguoc(a,b){
-    return b-a;
-  }
-  let 
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        let a = prompt("Nhập các kí tự muốn đảo ngược" + (i + 1))
+        arr.push(a);
+    }
+
+    function daonguoc(a, b) {
+        return b - a;
+    }
+
+    arr.reverse(daonguoc);
+    alert("Mảng đã được đảo ngược là:" + arr.join(','))
 </script>
 </body>
 </html>

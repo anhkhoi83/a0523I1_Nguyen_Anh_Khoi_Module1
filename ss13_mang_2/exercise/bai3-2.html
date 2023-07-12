@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  for (i = 0; i < 10; i++) {
+    let num = prompt("Vui lòng nhập phần tử thứ" + (i + 1))
+    arr.push(num);
+  }
+  let count = 0;
+  for(let j=0; j<arr.length;j++){
+    if( !isNaN(arr[j])){
+      count +=1
+    }
+  }
+  console.log("Mảng:"+ arr)
+  console.log("kích thước của mảng:"+ arr.length)
+  console.log("Số kí tự số có trong mảng:"+count)
+</script>
+</body>
+</html>
