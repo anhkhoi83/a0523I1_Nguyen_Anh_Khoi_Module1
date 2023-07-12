@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a =[];
+  let b=[];
+  for(i=0;i<10;i++){
+    let num=prompt("Vui lòng nhập phần tử"+(i+1)+ "của mảng A");
+    a.push(num);
+
+  }
+  alert("mảng A bạn vừa nhập là:"+a.join(','))
+
+  for(j=0;j<10;j++) {
+    let num2 = prompt("Vui lòng nhập phần tử" + (j + 1) + "của mảng B");
+    b.push(num2);
+  }
+  alert("mảng B bạn vừa nhập là:"+b.join(','));
+  let c=a.concat(b)
+  alert("Mảng C khi nối A và B vào là:"+c.join(','))
+</script>
+</body>
+</html>

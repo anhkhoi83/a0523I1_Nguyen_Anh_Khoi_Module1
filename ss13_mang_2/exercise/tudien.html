@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <input type="text" id="search">
+    <button type="button" onclick="timkiem()">Tìm Kiếm</button>
+    <div id="result"></div>
+</form>
+<script>
+    let a = ['people', 'animal', 'live', 'car', 'dog'];
+    let b = ['con nguoi', 'dong vat', 'song', 'xe hoi', 'con cho'];
+function timkiem(){
+    let input = document.getElementById("search").value;
+    let index = a.indexOf(input)
+    if(index !== -1){
+        b=b[index]
+        document.write("Từ"+ input+"có nghĩa là:"+b)
+    }else{
+        alert("Từ"+ input+"không được tìm thấy.")
+    }
+}
+</script>
+</body>
+</html>

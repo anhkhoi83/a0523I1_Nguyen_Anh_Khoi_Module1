@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr=[];
+    // for(let i=0;i<10; i++){
+    //   let num = +prompt("Nhập phần tử thứ "+(i+1));
+    //   arr.push(num);
+    // }
+    // arr.push('v')
+    // if(arr.indexOf('v') !==-1){
+    //
+    //     alert("V is in the array")
+    // }else{
+    //     alert("V is not in the array")
+    // }
+    let arr = [];
+
+    for( let i= 0; i<10; i++){
+        let num = prompt("Vui lòng nhập phần tử thứ"+(i+1))
+        arr.push(num);
+    } let v = prompt("Vui lòng nhập phần tử V:");
+    let flag = false
+
+ for(j=0;j<arr.length;j++){
+    if(v==arr[j]){
+        alert("V is in the array");
+        flag = true;
+        break;
+    }
+    }
+ if(flag== false){
+     alert("V is not in the array")
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let isExist = false;
+    for(i=0;i<10;i++){
+        let num= prompt("Vui lòng nhập phần tử thứ"+(i+1))
+        arr.push(num);
+
+    }let v = prompt("Vui lòng nhập phần tử V:")
+    for(j=0;j<arr.length; j++){
+        if(v==arr[j]){
+            arr.splice(j,1);
+            arr.push(0);
+            isExist= true;
+            alert(arr)
+            break;
+        }
+    }
+if(isExist==false){
+    alert("Số"+v+"không có trong mảng.")
+
+}
+
+</script>
+</body>
+</html>

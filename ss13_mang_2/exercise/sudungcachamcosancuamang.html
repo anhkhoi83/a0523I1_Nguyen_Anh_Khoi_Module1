@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1
+    // let myColor= ["Red","Green","White","Black"];
+    // console.log(myColor.toString())
+
+    //   Bài 2
+    // let numbers = prompt("Vui lòng nhập một dãy số ");
+    // let str = numbers.toString();
+    // let reSult = [str[0]];
+    // for (let x = 1; x < str.length; x++) {
+    //     if (str[x - 1] % 2 === 0 && str[x] % 2 == 0) {
+    //   reSult.push('-',str[x]);
+    //
+    //     }
+    //     else{
+    //         reSult.push(str[x]);
+    //     }
+    // }
+    // console.log(reSult.join(' '))
+
+    //     Bài 3
+    let str =prompt("Nhập chữ muốn chuyển:")
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i< str.length; i++){
+        if(UPPER.indexOf(str[i]) !==-1){
+            result.push(str[i].toLowerCase());
+
+        }else if(LOWER.indexOf(str[i]) !==-1){
+            result.push(str[i].toUpperCase());
+        }else{
+            result.push(str[i]);
+        }
+
+    }
+    console.log(result.join(' '));
+</script>
+</body>
+</html>
