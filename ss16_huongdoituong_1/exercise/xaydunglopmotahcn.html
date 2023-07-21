@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" height="200px" width="400px"></canvas>
+<script>
+    // class Rectangle {
+    //     constructor(length, width) {
+    //         this.length = length;
+    //         this.width = width;
+    //     }
+    //     Dientich(){
+    //         return this.length*this.width
+    //     }
+    //     Chuvi(){
+    //         return (this.length+this.width)*2
+    //     }
+    //     draw(){
+    //
+    //     }
+    //
+    // }
+    let Rectangle = function (length, width) {
+        this.length = length;
+        this.width = width;
+
+        this.dienTich = function () {
+            return this.length * this.width
+        }
+        this.chuVi = function () {
+            return (this.length + this.width) * 2
+        }
+        this.draw = function () {
+            let canvas= document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d")
+            ctx.clearRect(0, 0, canvas.height, canvas.width);
+            ctx.fillRect(0, 0, this.length, this.width);
+        }
+    }
+    let rectangle = new Rectangle(100, 50);
+    rectangle.draw();
+    rectangle.length = 200;
+    rectangle.width = 100;
+    rectangle.draw();
+    let area = rectangle.dienTich();
+    let premiter = rectangle.chuVi();
+    console.log("Area:"+area)
+    console.log("Premiter:"+premiter)
+
+
+
+</script>
+
+</body>
+</html>
